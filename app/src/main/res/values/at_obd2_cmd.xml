@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ATandOBD2Commands">
+        <item>CMD AT and OBD commands, [h] represents the [0-F] value</item>
+        <item>>->terminator</item>
+        <item>ATZ->Reset all</item>
+        <item>ATWS->Hot Start (QuickSoftwareRestart)</item>
+        <item>ATE0->Echo close [0], open [1]</item>
+        <item>ATL0->Newline close f[0], open [1]</item>
+        <item>AT DP->Describe current protocol</item>
+        <item>AT DPN->Use number to describe current agreement</item>
+        <item>AT SP h->Use [h:0-C] to set the protocol and save</item>
+        <item>AT SP Ah->Automatically set the protocol with [h:0-C] and save</item>
+        <item>AT TP h->Try Protocol [h:0-C]</item>
+        <item>AT TP Ah->Try Protocol [h:0-C] Automatic Search</item>
+        <item>0100->Check if PIDs support [01-20]</item>
+        <item>0105->Engine cooling temperature</item>
+        <item>010A->fuel pressure</item>
+        <item>010B->inhalation pressure</item>
+        <item>010C->engine revolutions</item>
+        <item>0101-> trouble code</item>
+        <item>03->Request trouble code</item>
+        <item>04->Clear the fault code</item>
+        <item>== RES_TEST OBD response data ==</item>
+        <item>SEARCHING...->OBD response data</item>
+        <item>41 00 BE 1F A8 13 >->OBD response data 0100</item>
+        <item>41 05 7B >->OBD response data: engine cooling temperature</item>
+        <item>41 0B 1A F8 >->OBD response data: inhalation pressure</item>
+        <item>41 0C 1A >->OBD response data: engine revolutions</item>
+        <item>41 01 81 07 65 04 >->OBD response data: number of fault codes</item>
+        <item>43 01 33 00 00 00 00 >->OBD response data: request fault code</item>
+        <item>43 00 43 00 00 00 00 >->OBD response data: request fault code</item>
+        <item>NO DATA >->OBD response data: No data</item>
+        <item>OK >->OBD response data: No data</item>
+        <item>ELM327 1.5 >->OBD response data: No data</item>
+        <item>UNABLE TO CONNECT >->OBD response data: ERROR</item>
+        <item>BUS BUSY >->OBD response data: ERROR</item>
+        <item>DATA ERROR >->OBD response data: ERROR</item>
+        <item>BUS ERROR >->OBD response data: ERROR</item>
+        <item>CAN ERROR >->OBD response data: ERROR</item>
+        <item>STOPPED >->OBD response data: ERROR</item>
+    </string-array>
+    <string-array name="protocols">
+        <item>0 - Automatic</item>
+        <item>1 - SAE J1850 PWM (41.6 Kbaud)</item>
+        <item>2 - SAE J1850 VPW (10.4 Kbaud)</item>
+        <item>3 - ISO 9141-2 (5 baud init, 10.4 Kbaud)</item>
+        <item>4 - ISO 14230-4 KWP (5 baud init, 10.4 Kbaud)</item>
+        <item>5 - ISO 14230-4 KWP (fast init, 10.4 Kbaud)</item>
+        <item>6 - ISO 15765-4 CAN (11 bit ID, 500 Kbaud)</item>
+        <item>7 - ISO 15765-4 CAN (29 bit ID, 500 Kbaud)</item>
+        <item>8 - ISO 15765-4 CAN (11 bit ID, 250 Kbaud)</item>
+        <item>9 - ISO 15765-4 CAN (29 bit ID, 250 Kbaud)</item>
+        <item>A - SAE J1939 CAN (29 bit ID, 250* Kbaud)</item>
+        <item>B - USER1 CAN (11* bit ID, 125* Kbaud)</item>
+        <item>C - USER2 CAN (11* bit ID, 50* Kbaud)</item>
+    </string-array>
+    <string-array name="OBD2_Commands">
+        <item>0100</item>
+        <item>Whether to support PID</item>
+        <item>-</item>
+        <item>4bytes</item>
+        <item>00-20</item>
+        <item>0105</item>
+        <item>Water temperature</item>
+        <item>°C</item>
+        <item>1byte</item>
+        <item>A-40</item>
+        <item>010A</item>
+        <item>Fuel pressure</item>
+        <item>kPa</item>
+        <item>1byte</item>
+        <item>A*3</item>
+        <item>010B</item>
+        <item>Inhalation pressure</item>
+        <item>kPa</item>
+        <item>1byte</item>
+        <item>A</item>
+        <item>010C</item>
+        <item>Number of revolutions</item>
+        <item>RPM</item>
+        <item>2bytes</item>
+        <item>((A*256)+B)/4</item>
+        <item>0101</item>
+        <item>Number of fault codes</item>
+        <item>-</item>
+        <item>4byte</item>
+        <item>-</item>
+        <item>03</item>
+        <item>error code</item>
+        <item>-</item>
+        <item>n*6bytes</item>
+        <item>-</item>
+        <item>04</item>
+        <item>Clear fault code</item>
+        <item>-</item>
+        <item>0byte</item>
+        <item>-</item>
+    </string-array>
+</resources>

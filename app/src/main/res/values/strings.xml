@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">customOBD2</string>
+
+
+    <string name="sel_devices">Bluetooth device selection</string>
+    <string name="help_title">help</string>
+    <string name="connected_status">Connection Status</string>
+    <string name="response_message">Feedback</string>
+    <string name="supported_pids">Support for PIDs[00-20], [0-not supported][1-support]</string>
+    <string name="input_command">Enter the AT or OBD2 command</string>
+    <string name="send_command">send</string>
+    <string name="select_device">select device</string>
+    <string name="disconnect_device">disconnect device</string>
+    <string name="title_paired_devices">paired device</string>
+    <string name="title_other_devices">new device</string>
+    <string name="scan_device_btn">scan for new devices</string>
+    <string name="stop_scan_btn">stop scanning</string>
+    <string name="menu_settings">settings</string>
+    <string name="menu_quit">Quite app</string>
+    <string name="menu_help">help</string>
+    <string name="menu_res_ok">Reply OK</string>
+    <string name="menu_res_normal">Reply Normal</string>
+    <string name="menu_res_error">Reply Error</string>
+    <string name="bt_not_available">Bluetooth device is not available</string>
+    <string name="please_input_cmd">Please enter a valid command</string>
+    <string name="device_connecting">Bluetooth device connection</string>
+    <string name="no_device_found">Bluetooth device not found</string>
+    <string name="device_scanning">Scanning device</string>
+    <string name="none_paired">Unpaired</string>
+    <string name="obd_protocol">OBD|| Communication Protocol</string>
+    <string name="obd_commands">OBD|| command</string>
+    <string name="obd_cmds_cmd">command</string>
+    <string name="obd_cmds_detail">Description</string>
+    <string name="obd_cmds_unit">unit</string>
+    <string name="obd_cmds_return">Return byte</string>
+    <string name="obd_cmds_formula">formula</string>
+
+
+</resources>
